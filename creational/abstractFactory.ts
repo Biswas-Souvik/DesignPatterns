@@ -102,7 +102,7 @@ class CheckoutService {
 }
 
 // Client Code
-function main() {
+function abstractFactory() {
   const indiaCheckoutService = new CheckoutService(new IndiaFactory(), "UPI");
   indiaCheckoutService.completeOrder(1000);
 
@@ -112,4 +112,4 @@ function main() {
   usCheckoutService.completeOrder(100);
 }
 
-main();
+abstractFactory();
