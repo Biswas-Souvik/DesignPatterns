@@ -110,6 +110,8 @@ function abstractFactory() {
 
   const usCheckoutService = new CheckoutService(new USFactory(), "Stripe");
   usCheckoutService.completeOrder(100);
+
+  console.log("\n" + "=".repeat(50) + "\n");
 }
 
 abstractFactory();
